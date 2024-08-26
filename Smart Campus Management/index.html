@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Campus Management</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#enrollment">Enrollment</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#faculty">Faculty</a></li>
+                <li><a href="#admin">Admin</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#login" id="login-link">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h1>Welcome to Smart Campus Management</h1>
+            <p>Manage your campus efficiently with our smart system.</p>
+        </section>
+        
+        <!-- Student Enrollment Section -->
+        <section id="enrollment">
+            <h2>Student Enrollment</h2>
+            <form id="enrollment-form">
+                <label for="student-name">Name:</label>
+                <input type="text" id="student-name" name="student-name" required>
+                
+                <label for="student-id">Student ID:</label>
+                <input type="text" id="student-id" name="student-id" required>
+                
+                <label for="course">Course:</label>
+                <select id="course" name="course" required>
+                    <option value="course1">Course 1</option>
+                    <option value="course2">Course 2</option>
+                </select>
+                
+                <button type="submit">Enroll</button>
+            </form>
+        </section>
+        
+        <!-- Class Schedule Section -->
+        <section id="schedule">
+            <h2>Class Schedule</h2>
+            <input type="text" id="search-schedule" placeholder="Search schedule">
+            <div id="schedule-list">
+                <!-- Class schedule will be dynamically loaded here -->
+            </div>
+        </section>
+        
+        <!-- Faculty Management Section -->
+        <section id="faculty">
+            <h2>Faculty Management</h2>
+            <form id="faculty-form">
+                <label for="faculty-name">Name:</label>
+                <input type="text" id="faculty-name" name="faculty-name" required>
+                
+                <label for="faculty-id">Faculty ID:</label>
+                <input type="text" id="faculty-id" name="faculty-id" required>
+                
+                <label for="assigned-course">Assigned Course:</label>
+                <select id="assigned-course" name="assigned-course" required>
+                    <option value="course1">Course 1</option>
+                    <option value="course2">Course 2</option>
+                </select>
+                
+                <button type="submit">Add Faculty</button>
+            </form>
+        </section>
+        
+        <!-- Administrative Functions Section -->
+        <section id="admin">
+            <h2>Administrative Functions</h2>
+            <button id="generate-report">Generate Report</button>
+            <div id="report-result">
+                <!-- Report results will be displayed here -->
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile">
+            <h2>Your Profile</h2>
+            <form id="profile-form">
+                <label for="profile-name">Name:</label>
+                <input type="text" id="profile-name" name="profile-name" required>
+                
+                <label for="profile-email">Email:</label>
+                <input type="email" id="profile-email" name="profile-email" required>
+                
+                <button type="submit">Update Profile</button>
+            </form>
+        </section>
+
+        <!-- Login Section -->
+        <section id="login" style="display: none;">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="login-email" required>
+                
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="login-password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Smart Campus Management</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
